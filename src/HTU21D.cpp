@@ -156,6 +156,8 @@ bool HTU21D::reset() {
   if(_wire.read() != 0x02) return false;
   
   _resolution = RESOLUTION_RH12_T14;
+
+  return true;
 }
 
 /**
